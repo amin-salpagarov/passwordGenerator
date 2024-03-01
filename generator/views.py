@@ -1,7 +1,10 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 import random
 from string import ascii_lowercase, ascii_uppercase
+
+from django.http import HttpResponse
+from django.shortcuts import render
+
+
 # Create your views here.
 def home(request):
     return render(request, 'generator/home.html')
